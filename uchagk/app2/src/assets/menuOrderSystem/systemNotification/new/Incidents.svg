@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     viewBox="0 0 0.84 0.84"
+>
+ <defs>
+  <font id="FontID0" horiz-adv-x="730" font-variant="normal" class="str0" style="fill-rule:nonzero" font-weight="400">
+	<font-face 
+		font-family="Times New Roman">
+		<font-face-src>
+			<font-face-name name="Times New Roman"/>
+		</font-face-src>
+	</font-face>
+   <missing-glyph><path d="M0 0z"/></missing-glyph>
+   <glyph unicode="!" horiz-adv-x="336" d="M177.944 177.944l-19.2111 0 -42.6367 399.865c-1.85167,17.5234 -2.86431,30.4947 -2.86431,39.0876 0,20.7252 5.56466,37.2456 16.5204,49.8794 10.9461,12.4699 24.091,18.7 39.5988,18.7 15.3342,0 28.4791,-6.2301 39.0876,-18.7 10.6182,-12.6338 16.0092,-31.1698 16.0092,-55.772 0,-7.92747 -0.675089,-19.0471 -2.02527,-33.1951l-44.4787 -399.865zm-9.10405 -81.8979c15.1702,0 27.9776,-5.39107 38.5861,-16.0092 10.6182,-10.7821 16.0092,-23.5895 16.0092,-38.2486 0,-15.1606 -5.39107,-28.1416 -16.0092,-38.9237 -10.6085,-10.6182 -23.4159,-16.0092 -38.5861,-16.0092 -14.9966,0 -27.968,5.39107 -38.5861,16.0092 -10.6182,10.7821 -16.0092,23.7631 -16.0092,38.9237 0,14.6591 5.39107,27.4665 16.0092,38.2486 10.6182,10.6182 23.5895,16.0092 38.5861,16.0092z"/>
+  </font>
+  <style type="text/css">
+   <![CDATA[
+    @font-face { font-family:"Times New Roman";font-variant:normal;font-weight:normal;src:url("#FontID0") format(svg)}
+    .str0 {stroke-width:24.11;stroke-miterlimit:22.9256}
+    .str1 {stroke:#B55A6E;stroke-width:0.01;stroke-miterlimit:22.9256}
+    .fil1 {fill:none}
+    .fil2 {fill:#B55A6E}
+    .fil0 {fill:#B55A6E;fill-rule:nonzero}
+    .fnt0 {font-weight:normal;font-size:0.38px;font-family:'Times New Roman'}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g>
+   <path class="fil0" d="M0.67 0.68l-0.27 -0.5 0.04 -0.02 0.27 0.5 -0.02 0.03 -0.02 -0.01zm0.04 -0.02c0,0.01 0,0.03 -0.01,0.03 -0.01,0.01 -0.02,0 -0.03,-0.01l0.04 -0.02zm-0.56 -0.01l0.54 0 0 0.04 -0.54 0 -0.02 -0.03 0.02 -0.01zm0 0.04c-0.01,0 -0.02,0 -0.02,-0.02 0,-0.01 0.01,-0.02 0.02,-0.02l0 0.04zm0.29 -0.51l-0.27 0.5 -0.04 -0.02 0.27 -0.5 0.04 0 0 0.02zm-0.04 -0.02c0.01,-0.01 0.02,-0.01 0.03,-0.01 0.01,0.01 0.01,0.02 0.01,0.03l-0.04 -0.02z"/>
+  </g>
+  <rect class="fil1" width="0.84" height="0.84"/>
+  <text x="0.36" y="0.62"  class="fil2 str1 fnt0">!</text>
+ </g>
+</svg>

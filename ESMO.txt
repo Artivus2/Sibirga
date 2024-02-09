@@ -1,0 +1,2 @@
+ssh root@10.8.59.10
+ESMOqaz1!

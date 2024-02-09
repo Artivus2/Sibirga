@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40px" height="40px" version="1.1"
+     style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+     viewBox="0 0 0.93 0.93"
+>
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#B55A6E;stroke-width:0.03;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2478744157200">
+   <g id="_2083264549712">
+    <path class="fil0 str0" d="M0.14 0.75l0 -0.24c0,-0.06 0.05,-0.11 0.11,-0.11l0.16 0c0.05,0 0.09,0.03 0.12,0.08l-0.09 0.06 0 0.21 -0.3 0 0 0zm0.45 -0.17l0 0 0.15 0c0.03,0 0.06,0.03 0.06,0.06 0,0.02 -0.03,0.05 -0.06,0.05l-0.2 0 -0.1 -0.15 0.06 0.1 0.09 -0.06 0 0z"/>
+    <line class="fil0 str0" x1="0.22" y1="0.55" x2="0.22" y2= "0.75" />
+    <circle class="fil0 str0" cx="0.33" cy="0.28" r="0.09"/>
+    <polygon class="fil0 str0" points="0.54,0.47 0.6,0.57 0.5,0.64 0.44,0.54 "/>
+    <path class="fil0 str0" d="M0.71 0.43l0 0.02c0,0.04 -0.04,0.08 -0.08,0.08l-0.05 0"/>
+    <circle class="fil0 str0" cx="0.71" cy="0.34" r="0.08"/>
+    <path class="fil0 str0" d="M0.74 0.41l0 0.02 -0.06 0 0 -0.02c0.01,0 0.02,0.01 0.03,0.01 0.01,0 0.02,-0.01 0.03,-0.01l0 0z"/>
+    <line class="fil0 str0" x1="0.71" y1="0.29" x2="0.71" y2= "0.35" />
+   </g>
+   <rect class="fil0" width="0.93" height="0.93"/>
+  </g>
+ </g>
+</svg>

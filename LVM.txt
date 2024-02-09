@@ -1,0 +1,6 @@
+lsblk
+sudo mkfs -t ext4 /dev/sdc1
+pvcreate /dev/sdc
+lvm vgextend ubuntu-vg /dev/sdc
+lvextend -r -L +400G /dev/ubuntu-vg/ubuntu-lv
+

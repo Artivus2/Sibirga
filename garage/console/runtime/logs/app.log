@@ -1,0 +1,197 @@
+2023-04-21 08:33:10 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Object configuration must be an array containing a "class" or "__class" element. in /var/www/html/test2/vendor/yiisoft/yii2/BaseYii.php:368
+Stack trace:
+#0 /var/www/html/test2/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject()
+#1 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(237): yii\base\Module->getModule()
+#2 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands()
+#3 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(192): yii\console\controllers\HelpController->getCommands()
+#4 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(292): yii\console\controllers\HelpController->getCommandDescriptions()
+#5 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#6 [internal function]: yii\console\controllers\HelpController->actionIndex()
+#7 /var/www/html/test2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /var/www/html/test2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /var/www/html/test2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /var/www/html/test2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /var/www/html/test2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /var/www/html/test2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /var/www/html/test2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /var/www/html/test2/yii(23): yii\base\Application->run()
+#15 {main}
+2023-04-21 08:33:10 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/2643,unix/unix:/tmp/.ICE-unix/2643'
+    'NVM_RC_VERSION' => ''
+    'COLORTERM' => 'truecolor'
+    'HISTCONTROL' => 'ignoreboth'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'no_proxy' => '127.0.0.1,localhost'
+    'HOSTNAME' => 'localhost'
+    'HISTSIZE' => '1000'
+    'NODE_OPTIONS' => '--openssl-legacy-provider'
+    'SSH_AUTH_SOCK' => '/run/user/0/keyring/ssh'
+    'XMODIFIERS' => '@im=ibus'
+    'DESKTOP_SESSION' => 'gnome'
+    'PWD' => '/var/www/html/test2'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'LOGNAME' => 'root'
+    'XDG_SESSION_TYPE' => 'wayland'
+    'SYSTEMD_EXEC_PID' => '2659'
+    'MC_TMPDIR' => '/var/tmp/mc-root'
+    'XAUTHORITY' => '/run/user/0/.mutter-Xwaylandauth.XLXZ31'
+    'GDM_LANG' => 'ru_RU.UTF-8'
+    'MC_SID' => '3279'
+    'HOME' => '/root'
+    'USERNAME' => 'root'
+    'LANG' => 'ru_RU.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'VTE_VERSION' => '6402'
+    'WAYLAND_DISPLAY' => 'wayland-0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/2e77b3ad_116e_4db9_8e6f_6e895c8d19ef'
+    'https_proxy' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'NVM_DIR' => '/root/.nvm'
+    'GNOME_SETUP_DISPLAY' => ':1'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'USER' => 'root'
+    'NO_PROXY' => '127.0.0.1,localhost'
+    'GNOME_TERMINAL_SERVICE' => ':1.89'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'HTTPS_PROXY' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'HTTP_PROXY' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'QT_IM_MODULE' => 'ibus'
+    'http_proxy' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'XDG_RUNTIME_DIR' => '/run/user/0'
+    'DEBUGINFOD_URLS' => 'https://debuginfod.centos.org/ '
+    'which_declare' => 'declare -f'
+    'XDG_DATA_DIRS' => '/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'PATH' => '/root/.local/bin:/root/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'GDMSESSION' => 'gnome'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/0/bus'
+    'MAIL' => '/var/spool/mail/root'
+    'OLDPWD' => '/var/www/html/test2/frontend'
+    'BASH_FUNC_which%%' => '() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1682065990.5516
+    'REQUEST_TIME' => 1682065990
+    'argv' => [
+        0 => 'yii'
+    ]
+    'argc' => 1
+]
+2023-04-21 08:35:16 [-][-][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: Object configuration must be an array containing a "class" or "__class" element. in /var/www/html/test2/vendor/yiisoft/yii2/BaseYii.php:368
+Stack trace:
+#0 /var/www/html/test2/vendor/yiisoft/yii2/base/Module.php(445): yii\BaseYii::createObject()
+#1 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(237): yii\base\Module->getModule()
+#2 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(172): yii\console\controllers\HelpController->getModuleCommands()
+#3 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(192): yii\console\controllers\HelpController->getCommands()
+#4 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(292): yii\console\controllers\HelpController->getCommandDescriptions()
+#5 /var/www/html/test2/vendor/yiisoft/yii2/console/controllers/HelpController.php(67): yii\console\controllers\HelpController->getDefaultHelp()
+#6 [internal function]: yii\console\controllers\HelpController->actionIndex()
+#7 /var/www/html/test2/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#8 /var/www/html/test2/vendor/yiisoft/yii2/base/Controller.php(178): yii\base\InlineAction->runWithParams()
+#9 /var/www/html/test2/vendor/yiisoft/yii2/console/Controller.php(180): yii\base\Controller->runAction()
+#10 /var/www/html/test2/vendor/yiisoft/yii2/base/Module.php(552): yii\console\Controller->runAction()
+#11 /var/www/html/test2/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction()
+#12 /var/www/html/test2/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction()
+#13 /var/www/html/test2/vendor/yiisoft/yii2/base/Application.php(384): yii\console\Application->handleRequest()
+#14 /var/www/html/test2/yii(23): yii\base\Application->run()
+#15 {main}
+2023-04-21 08:35:16 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'SHELL' => '/bin/bash'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/2643,unix/unix:/tmp/.ICE-unix/2643'
+    'NVM_RC_VERSION' => ''
+    'COLORTERM' => 'truecolor'
+    'HISTCONTROL' => 'ignoreboth'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'no_proxy' => '127.0.0.1,localhost'
+    'HOSTNAME' => 'localhost'
+    'HISTSIZE' => '1000'
+    'NODE_OPTIONS' => '--openssl-legacy-provider'
+    'SSH_AUTH_SOCK' => '/run/user/0/keyring/ssh'
+    'XMODIFIERS' => '@im=ibus'
+    'DESKTOP_SESSION' => 'gnome'
+    'PWD' => '/var/www/html/test2'
+    'XDG_SESSION_DESKTOP' => 'gnome'
+    'LOGNAME' => 'root'
+    'XDG_SESSION_TYPE' => 'wayland'
+    'SYSTEMD_EXEC_PID' => '2659'
+    'MC_TMPDIR' => '/var/tmp/mc-root'
+    'XAUTHORITY' => '/run/user/0/.mutter-Xwaylandauth.XLXZ31'
+    'GDM_LANG' => 'ru_RU.UTF-8'
+    'MC_SID' => '3279'
+    'HOME' => '/root'
+    'USERNAME' => 'root'
+    'LANG' => 'ru_RU.UTF-8'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'VTE_VERSION' => '6402'
+    'WAYLAND_DISPLAY' => 'wayland-0'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/2e77b3ad_116e_4db9_8e6f_6e895c8d19ef'
+    'https_proxy' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'NVM_DIR' => '/root/.nvm'
+    'GNOME_SETUP_DISPLAY' => ':1'
+    'XDG_SESSION_CLASS' => 'user'
+    'TERM' => 'xterm-256color'
+    'LESSOPEN' => '||/usr/bin/lesspipe.sh %s'
+    'USER' => 'root'
+    'NO_PROXY' => '127.0.0.1,localhost'
+    'GNOME_TERMINAL_SERVICE' => ':1.89'
+    'DISPLAY' => ':0'
+    'SHLVL' => '2'
+    'NVM_CD_FLAGS' => ''
+    'HTTPS_PROXY' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'HTTP_PROXY' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'QT_IM_MODULE' => 'ibus'
+    'http_proxy' => 'http://artamonoviv:!!Adm142142@10.8.0.42:8080/'
+    'XDG_RUNTIME_DIR' => '/run/user/0'
+    'DEBUGINFOD_URLS' => 'https://debuginfod.centos.org/ '
+    'which_declare' => 'declare -f'
+    'XDG_DATA_DIRS' => '/root/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'PATH' => '/root/.local/bin:/root/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'GDMSESSION' => 'gnome'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/0/bus'
+    'MAIL' => '/var/spool/mail/root'
+    'OLDPWD' => '/var/www/html'
+    'BASH_FUNC_which%%' => '() {  ( alias;
+ eval ${which_declare} ) | /usr/bin/which --tty-only --read-alias --read-functions --show-tilde --show-dot $@
+}'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1682066116.9308
+    'REQUEST_TIME' => 1682066116
+    'argv' => [
+        0 => 'yii'
+        1 => 'help'
+    ]
+    'argc' => 2
+]

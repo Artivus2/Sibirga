@@ -1,0 +1,37 @@
+i:hover {
+cursor: pointer;
+}
+
+i::before {
+  margin-right: -10px;
+  font-size: 100px;
+  color: cadetblue;
+  -webkit-text-stroke: 0.8px #ffffff;
+  animation: glowing 1.2s reverse infinite ease-in-out;
+}
+
+i:nth-child(4)::before {
+  animation-delay: 0;
+}
+i:nth-child(3)::before {
+  animation-delay: 0.14s;
+}
+i:nth-child(2)::before {
+  animation-delay: 0.21s;
+}
+i:nth-child(1)::before {
+  animation-delay: 0.28s;
+}
+
+/* Let's Create Arrow Animation */
+@keyframes glowing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    filter: drop-shadow(0 0 0 #ffffff) drop-shadow(0 0 1px #ffffff)
+      drop-shadow(0 0 2px black) drop-shadow(0 0 3px #ffffff)
+      drop-shadow(0 0 4px black) drop-shadow(0 0 5px #ffffff);
+  }
+}

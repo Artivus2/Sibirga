@@ -1,0 +1,5 @@
+SELECT * FROM amicum3.employee
+left join amicum3.worker ON amicum3.worker.employee_id = employee.id
+left join company_department ON amicum3.worker.company_department_id = company_department.department_id
+left join company ON company.id = company_department.department_id
+WHERE amicum3.employee.link_1c is null;

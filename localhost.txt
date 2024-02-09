@@ -1,0 +1,3 @@
+http://10.8.32.212:80
+http://10.8.32.239:5432
+10.*;*.mechel.corp;*mechelgroup.ru;192.168.*;*.mechel.com

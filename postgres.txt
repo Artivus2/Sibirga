@@ -1,0 +1,95 @@
+SELECT * FROM public.staff_histories
+WHERE time > timestamp '2024-01-24 17:00'
+order by id desc limit 40000;
+
+SELECT * FROM public.staff_histories
+WHERE time > timestamp '2024-01-24 17:00' order by id desc limit 20;
+
+ALTER TABLE staff_histories1 RENAME TO staff_histories;
+
+psql -U postgres -h localhost -d gas -c "SELECT * FROM public.staff_histories ORDER BY id DESC LIMIT 100;"
+CREATE TABLE public.staff_histories2 (
+    id bigint NOT NULL,
+    edit_time timestamp without time zone NOT NULL,
+    last_editor text,
+    is_enabled boolean NOT NULL,
+    is_deleted boolean NOT NULL,
+    comment text,
+    locator_num integer NOT NULL,
+    lsel_ip text,
+    level_name text,
+    lamp_num integer,
+    vector_id bigint,
+    vector_name text,
+    speed double precision,
+    staff_full_name text,
+    "time" timestamp without time zone NOT NULL,
+    geom public.geometry,
+    vector_length double precision,
+    distance double precision,
+    time_mode real,
+    time_mode_level_control text
+);"
+и индекс
+
+
+
+INSERT INTO public.staff_histories (
+id,
+    edit_time,
+    last_editor,
+    is_enabled,
+    is_deleted,
+    comment,
+    locator_num,
+    lsel_ip,
+    level_name,
+    lamp_num,
+    vector_id,
+    vector_name,
+    speed,
+    staff_full_name,
+    time,
+    geom,
+    vector_length,
+    distance,
+    time_mode,
+    time_mode_level_control
+
+) SELECT
+
+id + 333005325,
+    edit_time,
+    last_editor,
+    is_enabled,
+    is_deleted,
+    comment,
+    locator_num,
+    lsel_ip,
+    level_name,
+    lamp_num,
+    vector_id,
+    vector_name,
+    speed,
+    staff_full_name,
+    time,
+    geom,
+    vector_length,
+    distance,
+    time_mode,
+    time_mode_level_control
+	FROM
+public.staff_histories2
+;
+
+
+https://www.dmosk.ru/miniinstruktions.php?mini=postgresql-replication-logical
+
+
+select relname, relfilenode from pg_class where relname like '%staff_histories%'; 
+445222 (ленина), 212798 (сибирг)
+SELECT * FROM public.staff_histories ORDER BY id DESC LIMIT 100;
+
+
+CREATE PUBLICATION gas_pub FOR ALL TABLES;
+

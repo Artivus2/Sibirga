@@ -1,0 +1,9 @@
+./yii serve --docroot="@frontend/web"
+
+
+'controllerMap' => [
+	'serve' => [
+		'class' => ServeController::class,
+		'docroot' => '@frontend/web`,
+	],
+],

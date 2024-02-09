@@ -1,0 +1,20 @@
+"http-basic": {
+               "example.com": {
+                   "username": "your_username",
+                   "password": "your_password"
+               }
+           },
+           "repositories": [
+               {
+                   "type": "composer",
+                   "url": "https://packagist.org"
+               }
+           ],
+           "http-proxy": "http://your_proxy_server_ip:3128",
+           "https-proxy": "https://your_proxy_server_ip:3128"
+       },
+       "repositories": {
+           "packagist.org": {
+               "type": "composer",
+               "url": "https://packagist.org"
+           }

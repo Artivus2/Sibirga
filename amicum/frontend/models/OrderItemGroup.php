@@ -1,0 +1,64 @@
+<?php
+
+namespace frontend\models;
+
+use Yii;
+
+/**
+ * This is the model class for table "order_item_group".
+ *
+ * @property int $id ключ группы
+ * @property string $title название группы
+ *
+ * @property OrderItem[] $orderItems
+ */
+class OrderItemGroup extends \yii\db\ActiveRecord
+{
+    /**
+     * {@inheritdoc}
+     */
+    public static function tableName()
+    {
+        return 'order_item_group';
+    }
+
+    /**
+     * @return \yii\db\Connection the database connection used by this AR class.
+     */
+    public static function getDb()
+    {
+        return Yii::$app->get('db_amicum2');
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function rules()
+    {
+        return [
+            [['title'], 'required'],
+            [['title'], 'string', 'max' => 255],
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'title' => 'Title',
+        ];
+    }
+
+    /**
+     * Gets query for [[OrderItems]].
+     *
+     * @return \yii\db\ActiveQuery
+     */
+    public function getOrderItems()
+    {
+        return $this->hasMany(OrderItem::className(), ['group_id' => 'id']);
+    }
+}
