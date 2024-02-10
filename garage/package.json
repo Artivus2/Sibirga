@@ -1,7 +1,0 @@
-{
-  "dependencies": {
-    "app": "^0.1.0",
-    "three": "^0.153.0",
-    "vue-drag-n-drop": "^1.3.0"
-  }
-}
